@@ -1,0 +1,12 @@
+{
+    "Data": {
+        "DefaultConnection": {
+            "ConnectionString": "Server=.\sqlexpress;Database=wase-gen-db;Trusted_Connection=True;MultipleActiveResultSets=true"
+        }
+    },
+    "EntityFramework": {
+        "ApplicationDbContext": {
+            "ConnectionStringKey": "Data:DefaultConnection:ConnectionString"
+        }
+    }
+}
