@@ -9,16 +9,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        less: {
-            development: {
-                options: {
-                    paths: ["Assets"],
-                },
-                files: {
-                    "wwwroot/assets/css/bootstrap.css": "_libs/components/bootstrap/less/bootstrap.less"
-                }
-            },
-        },
         cssmin: {
             sitecss: {
                 files: {
