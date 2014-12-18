@@ -184,6 +184,8 @@ FakesAssemblies/
 
 # Bower
 /node_modules
+/_libs
+/bower_components
 /npm-debug.log
 
 /test/assets/package-*/
@@ -194,4 +196,3 @@ FakesAssemblies/
 /bower.json
 /component.json
 /bower_components
-/_libs/components
