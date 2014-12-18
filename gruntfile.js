@@ -3,7 +3,7 @@ module.exports = function (grunt) {
         bower: {
             install: {
                 options: {
-                    targetDir: "wwwroot/lib",
+                    targetDir: "_libs",
                     layout: "byComponent",
                     cleanTargetDir: false
                 }
@@ -18,10 +18,41 @@ module.exports = function (grunt) {
                     "wwwroot/assets/css/bootstrap.css": "_libs/components/bootstrap/less/bootstrap.less"
                 }
             },
+        },
+        cssmin: {
+            sitecss: {
+                files: {
+                    'wwwroot/assets/css/site.min.css': [
+                        '_libs/bootswatch/paper/bootstrap.css'
+                    ]
+                }
+            }
+        },
+        uglify: {
+            options: {
+                compress: true
+            },
+            applib: {
+                src: [
+                    '_libs/angular/angular.js',
+                    '_libs/angular-animate/angular-animate.js',
+                    '_libs/angular-aria/angular-aria.js',
+                    '_libs/angular-cookies/angular-cookies.js',
+                    '_libs/angular-loader/angular-loader.js',
+                    '_libs/angular-messages/angular-messages.js',
+                    '_libs/angular-resource/angular-resource.js',
+                    '_libs/angular-route/angular-route.js',
+                    '_libs/angular-sanitize/angular-sanitize.js',
+                    '_libs/angular-touch/angular-touch.js'
+                ],
+                dest: 'wwwroot/assets/libs/main-bundle.min.js'
+            }
         }
     });
 
     grunt.registerTask("default", ["bower:install"]);
     grunt.loadNpmTasks("grunt-bower-task");
     grunt.loadNpmTasks("grunt-contrib-less");
+    grunt.loadNpmTasks("grunt-contrib-cssmin");
+    grunt.loadNpmTasks("grunt-contrib-uglify");
 };
