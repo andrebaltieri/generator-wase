@@ -12,7 +12,7 @@ module.exports = function (grunt) {
         cssmin: {
             sitecss: {
                 files: {
-                    'wwwroot/assets/css/site.min.css': [
+                    'wwwroot/assets/css/styles-bundle.min.css': [
                         '_libs/bootswatch/paper/bootstrap.css'
                     ]
                 }
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
                     '_libs/jquery/jquery.js',
                     '_libs/bootstrap/js/bootstrap.js'
                 ],
-                dest: 'wwwroot/assets/libs/main-bundle.min.js'
+                dest: 'wwwroot/assets/libs/scripts-bundle.min.js'
             }
         }
     });
