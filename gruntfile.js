@@ -15,18 +15,13 @@ module.exports = function (grunt) {
                     paths: ["Assets"],
                 },
                 files: {
-                    "wwwroot/assets/css/site.css": "_libs/less/site.less"
+                    "wwwroot/assets/css/bootstrap.css": "_libs/components/bootstrap/less/bootstrap.less"
                 }
             },
         }
     });
 
-    // This command registers the default task which will install bower packages into wwwroot/lib
     grunt.registerTask("default", ["bower:install"]);
-
-    // The following line loads the grunt plugins.
-    // This line needs to be at the end of this this file.
     grunt.loadNpmTasks("grunt-bower-task");
-
     grunt.loadNpmTasks("grunt-contrib-less");
 };

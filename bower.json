@@ -1,56 +1,57 @@
 {
-    "name": "WaseGenerator",
-    "version": "0.0.1",
-    "authors": [
+  "name": "WaseGenerator",
+  "version": "0.0.1",
+  "authors": [
     "André Baltieri <andrebaltieri@hotmail.com>"
   ],
-    "description": "Wase is a simple and complete stack",
-    "main": "index.html",
-    "keywords": [
+  "description": "Wase is a simple and complete stack",
+  "main": "index.html",
+  "keywords": [
     "wase",
     "angularjs",
     "webapi",
     "aspnet",
     "microsoft"
   ],
-    "license": "MIT",
-    "homepage": "http://wase.azurewebsites.net/",
-    "private": true,
-    "ignore": [
+  "license": "MIT",
+  "homepage": "http://wase.azurewebsites.net/",
+  "private": true,
+  "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
   ],
-    "exportsOverride": {
-        "bootstrap": {
-            "js": "dist/js/*.*",
-            "css": "dist/css/*.*",
-            "fonts": "dist/fonts/*.*"
-        },
-        "jquery": {
-            "js": "jquery.{js,min.js,min.map}"
-        },
-        "jquery-validation": {
-            "": "jquery.validate.js"
-        },
-        "jquery-validation-unobtrusive": {
-            "": "jquery.validate.unobtrusive.{js,min.js}"
-        }
+  "exportsOverride": {
+    "bootstrap": {
+      "js": "dist/js/*.*",
+      "css": "dist/css/*.*",
+      "fonts": "dist/fonts/*.*"
     },
-    "dependencies": {
-        "bootstrap": "^3.3.1",
-        "jquery": "^2.1.1",
-        "angular": "^1.3.7",
-        "angular-animate": "^1.3.7",
-        "angular-aria": "^1.3.7",
-        "angular-cookies": "^1.3.7",
-        "angular-loader": "^1.3.7",
-        "angular-messages": "^1.3.7",
-        "angular-resource": "^1.3.7",
-        "angular-route": "^1.3.7",
-        "angular-sanitize": "^1.3.7",
-        "angular-touch": "^1.3.7"
+    "jquery": {
+      "js": "jquery.{js,min.js,min.map}"
+    },
+    "jquery-validation": {
+      "": "jquery.validate.js"
+    },
+    "jquery-validation-unobtrusive": {
+      "": "jquery.validate.unobtrusive.{js,min.js}"
     }
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.1",
+    "jquery": "^2.1.1",
+    "angular": "^1.3.7",
+    "angular-animate": "^1.3.7",
+    "angular-aria": "^1.3.7",
+    "angular-cookies": "^1.3.7",
+    "angular-loader": "^1.3.7",
+    "angular-messages": "^1.3.7",
+    "angular-resource": "^1.3.7",
+    "angular-route": "^1.3.7",
+    "angular-sanitize": "^1.3.7",
+    "angular-touch": "^1.3.7",
+    "bootswatch": "~3.3.1+2"
+  }
 }
