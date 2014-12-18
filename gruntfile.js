@@ -33,7 +33,9 @@ module.exports = function (grunt) {
                     '_libs/angular-resource/angular-resource.js',
                     '_libs/angular-route/angular-route.js',
                     '_libs/angular-sanitize/angular-sanitize.js',
-                    '_libs/angular-touch/angular-touch.js'
+                    '_libs/angular-touch/angular-touch.js',
+                    '_libs/jquery/jquery.js',
+                    '_libs/bootstrap/js/bootstrap.js'
                 ],
                 dest: 'wwwroot/assets/libs/main-bundle.min.js'
             }
